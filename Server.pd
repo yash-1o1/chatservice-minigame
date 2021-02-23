@@ -1,4 +1,4 @@
-#N canvas 10 5 697 689 10;
+#N canvas -1 0 697 689 10;
 #X floatatom 384 281 5 0 0 0 - - -, f 5;
 #X symbolatom 173 227 10 0 0 0 - - -, f 10;
 #X text 149 280 number of connections;
@@ -13,7 +13,7 @@
 #X msg 45 66 send 380 17.3;
 #X msg 60 117 client 1 23;
 #X text 166 66 "send <socketnumber> <data>";
-#X text 72 45 send message on specified socket;
+#X text 82 37 send message on specified socket;
 #X text 162 118 "client <clientnumber> <data>";
 #X obj 333 324 change;
 #X obj 179 10 print authenrication-code;
