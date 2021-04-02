@@ -1,4 +1,4 @@
-#N canvas 0 0 1350 729 10;
+#N canvas 0 0 1350 704 10;
 #X floatatom 241 35 5 0 0 0 - - -, f 5;
 #X symbolatom 329 417 10 0 0 0 - - -, f 10;
 #X msg 472 -35 print;
@@ -40,11 +40,8 @@ a game !greater: Guess that the random number is going to be greater
 than 25 !smaller: Guess that the random number is smaller than 25,
 f 25;
 #X msg 185 569 broadcast Oops!;
-#X msg 180 597 broadcast That's correct!;
 #X obj 1075 428 >= 25;
 #X obj 1142 427 <= 25;
-#X msg 926 261 broadcast Welcome to the chat mini-game. Make a guess!
-;
 #X msg 1101 -46 broadcast Rules: Hi this is a small guide to play the
 inbuilt mini-game in this chat. There are no strict rules for this
 game. The game generates a random number between 0 and 50 . All you
@@ -53,11 +50,15 @@ need to do is to guess if the number is greater or smaller than 25
 breaks when a wrong guess is made. You can either do it alone and challenge
 your friends to beat your streak or do it alongside them to achieve
 a new high score., f 25;
-#X obj 1004 291 route Starting Greater Smaller Help Login Succ Fail
+#X obj 1047 284 route Starting Greater Smaller Help Login Succ Fail
 ;
 #X msg 912 322 broadcast Enter the passcode;
 #X msg 909 348 broadcast Login Successful!;
 #X msg 828 391 broadcast Login Failed!;
+#X msg 180 597 broadcast Correct!;
+#X msg 1132 264 broadcast Welcome to the chat mini-game. Make a guess!
+;
+#X msg 1131 239 broadcast Starting!;
 #X connect 0 0 7 0;
 #X connect 2 0 4 0;
 #X connect 3 0 9 1;
@@ -76,14 +77,14 @@ a new high score., f 25;
 #X connect 11 0 4 0;
 #X connect 12 0 15 0;
 #X connect 13 0 14 0;
-#X connect 13 1 42 0;
+#X connect 13 1 40 0;
 #X connect 14 0 8 0;
 #X connect 15 0 4 0;
 #X connect 16 0 17 0;
 #X connect 17 0 4 0;
 #X connect 18 0 21 0;
-#X connect 19 0 38 0;
-#X connect 20 0 39 0;
+#X connect 19 0 37 0;
+#X connect 20 0 38 0;
 #X connect 21 0 27 0;
 #X connect 21 0 24 0;
 #X connect 21 0 22 0;
@@ -94,11 +95,11 @@ a new high score., f 25;
 #X connect 23 0 22 1;
 #X connect 24 0 28 0;
 #X connect 25 0 22 0;
-#X connect 25 0 37 0;
+#X connect 25 0 44 0;
 #X connect 25 1 18 0;
-#X connect 25 1 36 0;
 #X connect 25 1 31 0;
 #X connect 25 1 26 0;
+#X connect 25 1 36 0;
 #X connect 26 0 33 0;
 #X connect 28 0 22 1;
 #X connect 29 0 21 0;
@@ -109,21 +110,23 @@ a new high score., f 25;
 #X connect 34 0 4 0;
 #X connect 35 0 4 0;
 #X connect 36 0 4 0;
-#X connect 37 0 4 0;
+#X connect 37 0 25 0;
 #X connect 38 0 25 0;
-#X connect 39 0 25 0;
-#X connect 40 0 4 0;
+#X connect 39 0 4 0;
+#X connect 40 0 46 0;
+#X connect 40 0 29 0;
+#X connect 40 0 32 0;
+#X connect 40 0 45 0;
+#X connect 40 1 19 0;
+#X connect 40 2 20 0;
+#X connect 40 3 39 0;
+#X connect 40 4 41 0;
+#X connect 40 5 42 0;
+#X connect 40 6 43 0;
+#X connect 40 7 16 0;
 #X connect 41 0 4 0;
-#X connect 42 0 40 0;
-#X connect 42 0 29 0;
-#X connect 42 0 32 0;
-#X connect 42 1 19 0;
-#X connect 42 2 20 0;
-#X connect 42 3 41 0;
-#X connect 42 4 43 0;
-#X connect 42 5 44 0;
-#X connect 42 6 45 0;
-#X connect 42 7 16 0;
+#X connect 42 0 4 0;
 #X connect 43 0 4 0;
 #X connect 44 0 4 0;
 #X connect 45 0 4 0;
+#X connect 46 0 4 0;
